@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* left box 1  */
+
+.logo {
+    width: 75px;
+}
+
+.left {
+    width: 25vw;
+    padding: 5px;
+}
+
+.home ul li {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+/* left box 2 */
+
+.library {
+    min-height: 74vh;
+
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.heading h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.heading img {
+    width: 25px;
+}
+
+/* right nav bar  css */
+
+.right {
+    width: 75vw;
+    margin: 10px 0px;
+    background-color: rgb(34, 34, 34);
+}
+
+.header {
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.header>* {
+    padding: 10px 20px;
+}
+
+.header .nav img {
+    padding: 10px;
+}
+
+.header .nav img:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.header .buttons button:nth-child(1) {
+    color: white;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.header .buttons button:nth-child(1):hover {
+    color: rgb(204, 202, 202);
+}
+
+.header .buttons button:nth-child(2) {
+    background-color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.header .buttons button:nth-child(2):hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* right - playlist css */
+
+.spotify-playlist {
+    padding: 16px;
+}
+
+.card-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+    overflow-y: scroll;
+    max-height: 65vh;
+}
+
+.spotify-playlist .card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #181818;
+    position: relative;
+}
+
+.spotify-playlist .card:hover{
+    background-color: #242424;
+}
+
+.spotify-playlist .card h3 {
+    font-size: 16px;
+}
+
+.spotify-playlist .card p {
+    color: #a7a7a7;
+    font-size: 13px;
+}
+
+.spotify-playlist .card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.card .play {
+    position: absolute;
+    top: 160px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.card .play img{
+    width: 35px;
+}
+
+.card .play:hover{
+    opacity: 1;
+    cursor: pointer;
+    top: 150px;
+}
